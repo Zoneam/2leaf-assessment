@@ -259,3 +259,45 @@ body {
     color: #151515;
     font-family: "Open Sans", sans-serif;
 }
+
+/* Sponsors Footer */
+
+#sponsors-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url('assets/footer_image.png');
+    height: 546px;
+    background-size: cover;
+}
+
+#sponsors-footer h2 {
+    font-family: "Alfa Slab One", cursive;
+    color: #ff9900;
+    font-size: 32px;
+    line-height: 43.81px;
+    font-weight: 400;
+}
+
+#thank-you-wrapper {
+    width:327px;
+    height: 96px;
+}
+
+#sponsor-logos-wrapper{
+    height: max-content;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px 70px 20px;
+
+}
+
+#sponsor-logos-wrapper img {
+    width: 161px;
+    height: 80px;
+    
+}

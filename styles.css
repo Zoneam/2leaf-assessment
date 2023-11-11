@@ -41,7 +41,7 @@ body {
   object-fit: cover;
   object-position: center;
 }
-/* ----- */
+/* Top Controls */
 
 #logo {
   z-index: 1000;
@@ -136,14 +136,14 @@ body {
 }
 
 /* program-description */
-#program-description {
+.program-description {
   background-color: #151515;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#content-wrapper {
+.content-wrapper {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -172,7 +172,7 @@ body {
   height: 128px;
 }
 
-#content-wrapper h1 {
+.content-wrapper h1 {
   font-family: "Alfa Slab One", cursive;
   color: #ff9900;
   font-size: 48px;
@@ -190,7 +190,7 @@ body {
   background-color: #ff9900;
   margin: 0;
 }
-
+/* Mission */
 #mission{
     height:184px;
 }
@@ -198,3 +198,5 @@ body {
 #mission-title {
     width: 429px
 }
+
+/* Coaching */

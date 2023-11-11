@@ -196,7 +196,6 @@ body {
   text-wrap: nowrap;
   line-height: 65.71px;
   font-weight: 400;
-  align-self: flex-start;
 }
 
 #cards-wrapper {
@@ -349,62 +348,80 @@ footer h1 {
 /* Modal */
 .modal {
   display: none;
-  position: fixed;
+  position: absolute;
   z-index: 2000;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .modal-content {
-  position: relative;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
   background-color: #f5f5f5;
   width: 848px;
   height: 632px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 
 .close {
-  width:30px;
+  width: 30px;
   height: 30px;
-  color: #aaa;
-  position: absolute;
-  top: 40px;
-  right: 25px;
+  color: #7c7c7c;
+  position: relative;
+  top: 32px;
+  left: 32px;
   font-size: 35px;
   font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: black;
-  text-decoration: none;
   cursor: pointer;
 }
 
 .modal-header {
+  position: relative;
+  color: #f90;
+  text-align: center;
   width: 342px;
   height: 128px;
+  flex-shrink: 0;
+  margin: 50px auto;
 }
 
 .modal-header h1 {
   color: #ff9900;
   font-family: "Alfa Slab One", cursive;
   font-size: 48px;
-  line-height: 65.71px;
+  font-style: normal;
   font-weight: 400;
+  line-height: normal;
 }
 
 .modal-form input[type="email"],
 .modal-form input[type="password"] {
   width: 432px;
-  height:48px;
+  height: 48px;
   border: 2px solid #7c7c7c;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 220px;
+  width: 100%;
 }
 
 .modal-submit-btn {
@@ -418,12 +435,24 @@ footer h1 {
   height: 48px;
   border-radius: 5px;
   padding: 10px;
-  gap:10px;
+  gap: 10px;
   cursor: pointer;
 }
 
 .modal-submit-btn:hover {
   opacity: 0.8;
+}
+
+.modal-footer {
+  margin:0 auto;
+  width:304px;
+  color: #151515;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .modal-footer p {
@@ -433,8 +462,6 @@ footer h1 {
   line-height: 16.34px;
   font-weight: 400;
 }
-
-
 
 /* Media Queries */
 
@@ -447,4 +474,3 @@ footer h1 {
   }
   /* Other adjustments for the slider */
 }
-

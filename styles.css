@@ -51,7 +51,7 @@ body {
 }
 
 #portal-btn {
-    cursor: pointer;
+  cursor: pointer;
   position: absolute;
   top: 77px;
   right: 40px;
@@ -61,7 +61,7 @@ body {
   background-color: #ff9900;
   color: black;
   font-family: "Open Sans", sans-serif;
-  border-radius: 8px 10px;
+  border-radius: 5px;
   padding: 8px 10px;
   height: 40px;
   gap: 8px;
@@ -173,177 +173,187 @@ body {
   margin: 0;
 }
 /* Mission */
-#mission{
-    height:184px;
+#mission {
+  height: 184px;
 }
 
 #mission-title {
-    width: 429px
+  width: 429px;
 }
 
 /* Coaching */
 
 #coaching {
-    display: flex;
-    flex-direction: column;
-    padding: 60px
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
 }
 
 #coaching h1 {
-    font-family: "Alfa Slab One", cursive;
-    color: #ff9900;
-    font-size: 48px;
-    text-wrap: nowrap;
-    line-height: 65.71px;
-    font-weight: 400;
-    align-self: flex-start;
+  font-family: "Alfa Slab One", cursive;
+  color: #ff9900;
+  font-size: 48px;
+  text-wrap: nowrap;
+  line-height: 65.71px;
+  font-weight: 400;
+  align-self: flex-start;
 }
 
 #cards-wrapper {
-    width:1162px;
-    height: 746px;
+  width: 1162px;
+  height: 746px;
 }
 
 .directors {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .director-card {
-    height: 648px;
-    width: 568px;
-    background-color: #f5f5f5;
-    z-index: 1000;
-    padding: 30px 20px;
+  height: 648px;
+  width: 568px;
+  background-color: #f5f5f5;
+  z-index: 1000;
+  padding: 30px 20px;
 }
 
 .director-card h4 {
-    font-family: "Alfa Slab One", cursive;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 43.81px;
-    color: #ff9900;
+  font-family: "Alfa Slab One", cursive;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43.81px;
+  color: #ff9900;
 }
 
 .director-description {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 21.79px;
-    color: #151515;
-    font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21.79px;
+  color: #151515;
+  font-family: "Open Sans", sans-serif;
 }
 
 .director-title {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 32.68px;
-    color: #151515;
-    font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32.68px;
+  color: #151515;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* Sponsors  */
 
-#sponsors-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background-image: url('assets/footer_image.png');
-    height: 546px;
-    background-size: cover;
+#sponsors-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url("assets/footer_image.png");
+  height: 546px;
+  background-size: cover;
 }
 
 #sponsors-footer h2 {
-    font-family: "Alfa Slab One", cursive;
-    color: #ff9900;
-    font-size: 32px;
-    line-height: 43.81px;
-    font-weight: 400;
+  font-family: "Alfa Slab One", cursive;
+  color: #ff9900;
+  font-size: 32px;
+  line-height: 43.81px;
+  font-weight: 400;
 }
 
 #thank-you-wrapper {
-    width:327px;
-    height: 96px;
+  width: 327px;
+  height: 96px;
 }
 
-#sponsor-logos-wrapper{
-    height: max-content;
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 20px 70px 20px;
+#sponsor-logos-wrapper {
+  height: max-content;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 20px 70px 20px;
 }
 
 #sponsor-logos-wrapper img {
-    width: 161px;
-    height: 80px;
+  width: 161px;
+  height: 80px;
 }
 
 /* Footer */
 
 footer {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 546px;
-    background-color: #151515;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 546px;
+  background-color: #151515;
 }
 
-
 footer h1 {
-    color: #ff9900;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 43.81px;
-    font-family: "Alfa Slab One", cursive;
+  color: #ff9900;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43.81px;
+  font-family: "Alfa Slab One", cursive;
 }
 
 .signup-form {
-    width: 904px;
-    height: 121px;       
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+  width: 904px;
+  height: 121px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .signup-form input {
-    text-indent: 10px;
-    width: 432px;
-    height: 48px;
-    color: #7c7c7c;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 21.79px;
-    font-family: "Open Sans", sans-serif;
+  text-indent: 10px;
+  width: 432px;
+  height: 48px;
+  color: #7c7c7c;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21.79px;
+  font-family: "Open Sans", sans-serif;
 }
 
-
 #signup-btn:hover {
-    background-color: #ffbb00;
+  background-color: #ffbb00;
 }
 
 ::placeholder {
-    color: #ddd;
-    text-indent: 10px;
+  color: #ddd;
+  text-indent: 10px;
 }
 
 #signup-btn {
-    width: 432px;
-    height:48px;
-    background-color: #ff9900;
-    gap:10px;
-    padding:10px;
-    border-radius: 5px;;
-    color: #151515;
-    font-size: 16px;
-    cursor: pointer;
-    font-weight: 600;
-    font-family: "Open Sans", sans-serif;
-    line-height: 21.79px;
+  width: 432px;
+  height: 48px;
+  background-color: #ff9900;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  color: #151515;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  line-height: 21.79px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) {
+  .slider,
+  .slides,
+  .slides img {
+    width: 100%;
+    height: auto;
+  }
+  /* Other adjustments for the slider */
 }

@@ -21,11 +21,11 @@ $(document).ready(function () {
   });
 
 // click outside modal to close
-  $(window).on("click", function(event) {
-    if ($(event.target).hasClass("modal")) {
-      $("#login-modal").hide();
-    }
-  });
+$(window).on("click", function(event) {
+  if (!$(event.target).closest('.modal-content').length && !$(event.target).is("#portal-btn")) {
+    $("#login-modal").hide();
+  }
+});
 
 // click login parent portal to open modal
   $("#portal-btn").on("click", function() {
@@ -38,7 +38,7 @@ $(document).ready(function () {
     const username = $("#username").val();
     const password = $("#password").val();
     console.log("Username: " + username + ", Password: " + password);
-    // login logic back end axios ....
+    // login logic back end axios
     $("#login-modal").hide();
   });
 });

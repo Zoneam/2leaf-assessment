@@ -19,6 +19,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 /* Slider */
 .slider {
   max-width: 100%;
@@ -105,6 +106,8 @@ body {
 
 #partnership-logos img {
   height: 82.58px;
+  width: 172px;
+  flex-shrink: 0;
   object-fit: cover;
   object-position: center;
 }
@@ -123,6 +126,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+ #mission-title {
+  width: 366px;
 }
 
 .content-wrapper {
@@ -177,9 +184,7 @@ body {
   height: 184px;
 }
 
-#mission-title {
-  width: 429px;
-}
+
 
 /* Coaching */
 
@@ -187,6 +192,13 @@ body {
   display: flex;
   flex-direction: column;
   padding: 60px;
+}
+
+#coaching-wrapper {
+  width: 716px;
+  height: 66px;
+  flex-shrink: 0;
+  margin-bottom: 32px;
 }
 
 #coaching h1 {
@@ -298,6 +310,14 @@ footer h1 {
   font-size: 32px;
   line-height: 43.81px;
   font-family: "Alfa Slab One", cursive;
+}
+
+#footer-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 400px;
 }
 
 .signup-form {
@@ -444,11 +464,11 @@ footer h1 {
 }
 
 .modal-footer {
-  margin:0 auto;
-  width:304px;
+  margin: 0 auto;
+  width: 304px;
   color: #151515;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -465,12 +485,369 @@ footer h1 {
 
 /* Media Queries */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 601px) and (max-width: 1162px) {
+
   .slider,
-  .slides,
-  .slides img {
-    width: 100%;
+  .slides {
     height: auto;
   }
-  /* Other adjustments for the slider */
+  .content-wrapper h1 {
+    margin-left: 20px;
+    font-size: 32px;
+    line-height: 43.81px;
+  }
+
+  .content-wrapper {
+    margin: 20px;
+    height: auto;
+  }
+
+  .level-up {
+    width: 100%;
+    min-width: min-content;
+    height: auto;
+    margin-right: 50px;
+  }
+
+  #mission {
+    height: auto;
+  }
+
+  #programm-mission {
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .directors {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .level-up{
+    font-size: 12px;
+  }
+
+  .title, #mission-title {
+    width: 550px;
+    height: 128px;
+  }
+
+  #coaching {
+    padding: 0;
+  }
+  #coaching-wrapper {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  #coaching-wrapper h1 {
+    margin-left: 20px;
+    font-size: 32px;
+    line-height: 43.81px;
+  }
+
+  #cards-wrapper {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .director-card {
+    width: 90%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .signup-form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #sponsors-footer {
+    text-align: center;
+    height: 265px;
+  }
+
+  #sponsor-logos-wrapper {
+    width: 70%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  footer {
+    height: auto;
+  }
+}
+
+/* media queris for mobile phones */
+@media only screen and (max-width: 600px) {
+  .slider,
+  .slides {
+    height: auto;
+  }
+
+  .logo-container {
+    width: 100px;
+  }
+
+  .logo-container img,
+  #partnership-logos img,
+  #sponsor-logos-wrapper img
+  {
+    height: auto;
+    width: 80px;
+  }
+
+  .content-wrapper h1 {
+    margin-left: 20px;
+    font-size: 24px;
+    line-height: normal;
+  }
+
+  .logo-container {
+    top: 19px;
+    left: 17px;
+  }
+  #portal-btn {
+    top: 25px;
+  }
+
+  .content-wrapper {
+    margin: 20px;
+    height: auto;
+  }
+
+  .level-up {
+    width: 100%;
+    min-width: min-content;
+    height: auto;
+    margin-right: 20px;
+  }
+
+  .title, #mission-title {
+    width: 450px;
+  }
+
+  #mission {
+    height: auto;
+  }
+
+  #programm-mission {
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .directors {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #coaching {
+    padding: 0;
+  }
+  #coaching-wrapper {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  #coaching-wrapper h1 {
+    margin-left: 20px;
+    font-size: 32px;
+    line-height: 43.81px;
+  }
+
+  #cards-wrapper {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .director-card {
+    width: 90%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .signup-form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #sponsors-footer {
+    text-align: center;
+    height: 265px;
+  }
+
+  #sponsor-logos-wrapper {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    padding: 0 20px;
+  }
+
+  footer {
+    height: auto;
+  }
+}
+
+
+@media only screen and (max-width: 375px) { 
+
+  .slider,
+  .slides {
+    height: auto;
+  }
+
+  .logo-container {
+    width: 100px;
+  }
+
+  .content-wrapper h1 {
+    margin-left: 20px;
+    font-size: 24px;
+    line-height: normal;
+  }
+
+  .logo-container {
+    top: 19px;
+    left: 17px;
+  }
+  #portal-btn {
+    top: 25px;
+  }
+
+  .content-wrapper {
+    margin: 20px;
+    height: auto;
+  }
+
+  .level-up {
+    width: 100%;
+    min-width: min-content;
+    height: auto;
+    margin-right: 20px;
+  }
+
+  .title, #mission-title {
+    width: 321px;
+    height:80px;
+  }
+
+  #mission , .level-up {
+    height: auto;
+    margin: 0;
+    padding: 15px;
+  }
+
+  .content-wrapper {
+    height: auto;
+    margin: 20px 0;
+    flex-direction: column;
+  }
+
+  .directors {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #coaching {
+    padding: 0;
+  }
+  #coaching-wrapper {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  #coaching-wrapper h1 {
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 43.81px;
+  }
+
+  #in-partnership {
+    height: 100px;
+    
+  }
+
+  #partnership-logos {
+    width: 70%;
+    height: auto;
+    margin: 0;
+  }
+
+  #cards-wrapper {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .line{
+    width: 285px;
+  }
+
+  .director-card {
+    width: 90%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .signup-form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #sponsors-footer {
+    text-align: center;
+    height: 265px;
+  }
+
+  #sponsor-logos-wrapper {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    padding: 0 20px;
+  }
+
+  footer {
+    height: auto;
+  }
+
+  #footer-content-wrapper{
+    width: 100%;
+  }
+
+  #footer-content-wrapper > div {
+    width: 100%;
+  }
+
+#signup-btn,.signup-form input{
+    width:80%;
+  }
 }

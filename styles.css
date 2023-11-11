@@ -200,3 +200,62 @@ body {
 }
 
 /* Coaching */
+
+#coaching {
+    display: flex;
+    flex-direction: column;
+    padding: 60px
+}
+
+#coaching h1 {
+    font-family: "Alfa Slab One", cursive;
+    color: #ff9900;
+    font-size: 48px;
+    text-wrap: nowrap;
+    line-height: 65.71px;
+    font-weight: 400;
+    align-self: flex-start;
+}
+
+#cards-wrapper {
+    width:1162px;
+    height: 746px;
+}
+
+.directors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.director-card {
+    height: 648px;
+    width: 568px;
+    background-color: #f5f5f5;
+    z-index: 1000;
+    padding: 30px 20px;
+}
+
+.director-card h4 {
+    font-family: "Alfa Slab One", cursive;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43.81px;
+    color: #ff9900;
+}
+
+.director-description {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21.79px;
+    color: #151515;
+    font-family: "Open Sans", sans-serif;
+}
+
+.director-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32.68px;
+    color: #151515;
+    font-family: "Open Sans", sans-serif;
+}

@@ -128,7 +128,7 @@ body {
   align-items: center;
 }
 
- #mission-title {
+#mission-title {
   width: 366px;
 }
 
@@ -183,8 +183,6 @@ body {
 #mission {
   height: 184px;
 }
-
-
 
 /* Coaching */
 
@@ -486,7 +484,6 @@ footer h1 {
 /* Media Queries */
 
 @media only screen and (min-width: 601px) and (max-width: 1162px) {
-
   .slider,
   .slides {
     height: auto;
@@ -527,11 +524,12 @@ footer h1 {
     justify-content: space-evenly;
   }
 
-  .level-up{
+  .level-up {
     font-size: 12px;
   }
 
-  .title, #mission-title {
+  .title,
+  #mission-title {
     width: 550px;
     height: 128px;
   }
@@ -586,6 +584,11 @@ footer h1 {
   footer {
     height: auto;
   }
+
+  .modal-content {
+    width: 648px;
+    height: 632px;
+  }
 }
 
 /* media queris for mobile phones */
@@ -601,8 +604,7 @@ footer h1 {
 
   .logo-container img,
   #partnership-logos img,
-  #sponsor-logos-wrapper img
-  {
+  #sponsor-logos-wrapper img {
     height: auto;
     width: 80px;
   }
@@ -633,7 +635,8 @@ footer h1 {
     margin-right: 20px;
   }
 
-  .title, #mission-title {
+  .title,
+  #mission-title {
     width: 450px;
   }
 
@@ -665,6 +668,7 @@ footer h1 {
   }
 
   #coaching-wrapper h1 {
+    text-wrap: wrap;;
     margin-left: 20px;
     font-size: 32px;
     line-height: 43.81px;
@@ -706,11 +710,47 @@ footer h1 {
   footer {
     height: auto;
   }
+
+  .modal-content {
+    width: 400px;
+    height: 500px;
+  }
+
+  .modal-header {
+    margin: auto;
+    height: auto;
+    width: auto;
+  }
+
+  .modal-header h1 {
+    font-size: 24px;
+  }
+
+  .modal-form {
+    height: 300px;
+    width: auto;
+  }
+
+  .modal-footer {
+    margin-bottom: 50px;
+  }
+
+  .modal-form input[type="email"],
+  .modal-form input[type="password"] {
+    width: 300px;
+  }
+
+  .modal-submit-btn{
+    width: 300px;
+  }
+
+  .close{
+    top: 10px;
+    left: 10px;
+  }
 }
 
-
-@media only screen and (max-width: 375px) { 
-
+@media only screen and (max-width: 390px) {
   .slider,
   .slides {
     height: auto;
@@ -746,12 +786,14 @@ footer h1 {
     margin-right: 20px;
   }
 
-  .title, #mission-title {
+  .title,
+  #mission-title {
     width: 321px;
-    height:80px;
+    height: 80px;
   }
 
-  #mission , .level-up {
+  #mission,
+  .level-up {
     height: auto;
     margin: 0;
     padding: 15px;
@@ -789,7 +831,6 @@ footer h1 {
 
   #in-partnership {
     height: 100px;
-    
   }
 
   #partnership-logos {
@@ -798,13 +839,15 @@ footer h1 {
     margin: 0;
   }
 
+
+
   #cards-wrapper {
     width: 100%;
     height: auto;
     margin: 20px 0;
   }
 
-  .line{
+  .line {
     width: 285px;
   }
 
@@ -839,7 +882,7 @@ footer h1 {
     height: auto;
   }
 
-  #footer-content-wrapper{
+  #footer-content-wrapper {
     width: 100%;
   }
 
@@ -847,7 +890,46 @@ footer h1 {
     width: 100%;
   }
 
-#signup-btn,.signup-form input{
-    width:80%;
+  #signup-btn,
+  .signup-form input {
+    width: 80%;
+  }
+
+  .modal-content {
+    width: 280px;
+    height: 400px;
+  }
+
+  .modal-header {
+    margin: auto;
+    height: auto;
+    width: auto;
+  }
+
+  .modal-header h1 {
+    font-size: 16px;
+  }
+
+  .modal-form {
+    height: 200px;
+    width: auto;
+  }
+
+  .modal-footer {
+    width:200px;
+  }
+
+  .modal-form input[type="email"],
+  .modal-form input[type="password"] {
+    width: 200px;
+  }
+
+  .modal-submit-btn{
+    width: 200px;
+  }
+
+  .close{
+    top: 10px;
+    left: 10px;
   }
 }

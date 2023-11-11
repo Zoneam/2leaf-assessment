@@ -1,10 +1,14 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Top image slider
-    const slides = document.querySelector('.slides');
-    let id = 0;
-    function slide() {
-        id = (id + 1) % 2;
-        slides.style.transform = `translateX(-${id * 50}%)`;
-    }
-    setInterval(slide, 5000);
-});
+let currentIndex = 0;
+
+function slideTo(index) {
+    const slidesElement = document.querySelector('.slides');
+    slidesElement.style.transform = `translateX(${-index * 50}%)`;
+    currentIndex = index;
+}
+
+function nextSlide() {
+    const totalSlides = document.querySelectorAll('.slides img').length;
+    slideTo((currentIndex + 1) % totalSlides);
+}
+
+setInterval(nextSlide, 5000); 

@@ -1,99 +1,261 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@400;600&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-    font-size: 1em;
-    font-family: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 1em;
+  font-family: inherit;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
+body {
+  display: flex;
+  flex-direction: column;
 }
 /* Slider */
 .slider {
-    max-width: 100%;
-    height: 608px;
-    overflow: hidden;
-    position: relative;
+  max-width: 100%;
+  height: 608px;
+  overflow: hidden;
+  position: relative;
 }
 
 .slides {
-    display: flex;
-    width: 200%;
-    transition: transform 300ms ease-out; 
+  width: 200%;
+  height: 608px;
+  display: flex;
+  overflow: hidden;
+  transition: transform 300ms ease-out;
 }
 
 .slides img {
-    width: 50%;
-    flex-shrink: 0;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
-/* ----- */
+/* Top Controls */
 
 #logo {
-    z-index: 1000;
-    position: absolute;
-    top: 10px; 
-    left: 10px; 
+  z-index: 1000;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
 #portal-btn {
-    position: absolute;
-    top: 77px; 
-    right: 40px;   
-    background-color: #FF9900;
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-    border-radius: 8px 10px;
-    padding: 8px 10px;;
-    height: 40px;
-    gap: 8px;
-    text-wrap: nowrap;
+  position: absolute;
+  top: 77px;
+  right: 40px;
+  background-color: #ff9900;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 8px 10px;
+  padding: 8px 10px;
+  height: 40px;
+  gap: 8px;
+  text-wrap: nowrap;
 }
 
 .logo-container {
-    z-index: 1000;
-    position: absolute;
-    width: 172px;
-    height:82.58px;
-    top:64px;
-    left:72px;
+  z-index: 1000;
+  position: absolute;
+  width: 172px;
+  height: 82.58px;
+  top: 64px;
+  left: 72px;
 }
 
 .logo {
-    position: absolute;
-    border-radius: 50%;
+  position: absolute;
+  border-radius: 50%;
 }
 
 .orange {
-    width: 73.24px;
-    height: 73.24px;
-    background-color: #FF9900;
-    top: 0;
-    left: 0;
+  width: 73.24px;
+  height: 73.24px;
+  background-color: #ff9900;
+  top: 0;
+  left: 0;
 }
 
 .blue {
-    position: relative;
-    width: 45.96px;
-    height: 45.96px;
-    background-color: #4788AC;
-    top:36px;
-    left:36px;
+  position: relative;
+  width: 45.96px;
+  height: 45.96px;
+  background-color: #4788ac;
+  top: 36px;
+  left: 36px;
 }
 
 #logo {
-    top: 23px; 
-    left: 87px;
-    font-weight: bolder;
-    font-size: 1.5em;
+  top: 23px;
+  left: 87px;
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+/* in-partnership */
+#in-partnership {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f5f5f5;
+  height: 200px;
+}
+
+#partnership-logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 445px;
+  height: 82.58px;
+}
+
+#partnership-logos img {
+  height: 82.58px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#in-partnership span {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21.79px;
+  text-align: center;
+}
+
+/* program-description */
+.program-description {
+  background-color: #151515;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 304px;
+  justify-content: space-around;
+}
+
+.level-up {
+  width: 684px;
+  min-width: 684px;
+  height: 160px;
+  font-size: 16px;
+  color: #f5f5f5;
+  width: 684px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 21.79px;
+  overflow: hidden;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  width: 366px;
+  height: 128px;
+}
+
+.content-wrapper h1 {
+  font-family: "Alfa Slab One", cursive;
+  color: #ff9900;
+  font-size: 48px;
+  text-wrap: nowrap;
+  line-height: 65.71px;
+  font-weight: 400;
+}
+
+.line {
+  bottom: 0;
+  left: 0;
+  width: 432px;
+  border: 1px;
+  height: 2px;
+  background-color: #ff9900;
+  margin: 0;
+}
+/* Mission */
+#mission{
+    height:184px;
+}
+
+#mission-title {
+    width: 429px
+}
+
+/* Coaching */
+
+#coaching {
+    display: flex;
+    flex-direction: column;
+    padding: 60px
+}
+
+#coaching h1 {
+    font-family: "Alfa Slab One", cursive;
+    color: #ff9900;
+    font-size: 48px;
+    text-wrap: nowrap;
+    line-height: 65.71px;
+    font-weight: 400;
+    align-self: flex-start;
+}
+
+#cards-wrapper {
+    width:1162px;
+    height: 746px;
+}
+
+.directors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.director-card {
+    height: 648px;
+    width: 568px;
+    background-color: #f5f5f5;
+    z-index: 1000;
+    padding: 30px 20px;
+}
+
+.director-card h4 {
+    font-family: "Alfa Slab One", cursive;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43.81px;
+    color: #ff9900;
+}
+
+.director-description {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21.79px;
+    color: #151515;
+    font-family: "Open Sans", sans-serif;
+}
+
+.director-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32.68px;
+    color: #151515;
+    font-family: "Open Sans", sans-serif;
 }

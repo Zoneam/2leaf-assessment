@@ -9,7 +9,7 @@ $(document).ready(function() {
             success: function(response) {
                 if (!response.isConfirmed) {
                     window.location.href = 'index.html';
-                    alert('Please confirm your email address');
+                    alert('You have received an email. Please confirm your email address to proceed.');
                 } else {
                     $('#dashboard-content').show();
                     $('#welcome-name').text(`Welcome back ${response.name}`);

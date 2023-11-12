@@ -4,7 +4,7 @@ $(document).ready(function() {
     console.log(userToken);
     if (userToken) {
         $.ajax({
-            url: 'https://melodic-fairy-d0d535.netlify.app/api/users/check-token', 
+            url: 'https://assessment2leaf-42f9c9ea473a.herokuapp.com/api/users/check-token', 
             type: 'POST',
             headers: { 'Authorization': 'Bearer ' + userToken },
             success: function(response) {

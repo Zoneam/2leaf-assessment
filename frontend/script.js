@@ -1,12 +1,13 @@
 $(document).ready(function () {
   let currentIndex = 0;
 
+
   // Checking for token to display modal
   function checkUserToken(successCallback) {
       const userToken = localStorage.getItem('userToken');
       if (userToken) {
           $.ajax({
-              url: 'https://melodic-fairy-d0d535.netlify.app/api/users/check-token',
+              url: 'https://assessment2leaf-42f9c9ea473a.herokuapp.com/api/users/check-token',
               type: 'POST',
               headers: { 'Authorization': 'Bearer ' + userToken },
               success: function(res) {
@@ -104,10 +105,8 @@ $(document).ready(function () {
         return;
     }
 
-    console.log("Name: " + name + ", Email: " + email + ", Password: " + password);
-
       $.ajax({
-          url: 'https://melodic-fairy-d0d535.netlify.app/api/users',
+          url: 'https://assessment2leaf-42f9c9ea473a.herokuapp.com/api/users',
           type: 'POST',
           contentType: 'application/json',
           data: JSON.stringify({ name: name, email: email, password: password }),
@@ -128,10 +127,9 @@ $(document).ready(function () {
       event.preventDefault();
       const email = $("#login-email").val();
       const password = $("#login-password").val();
-      console.log("email: " + email + ", Password: " + password);
 
       $.ajax({
-          url: 'https://melodic-fairy-d0d535.netlify.app/api/users/login',
+          url: 'https://assessment2leaf-42f9c9ea473a.herokuapp.com/api/users/login',
           type: 'POST',
           contentType: 'application/json',
           data: JSON.stringify({ email: email, password: password }),

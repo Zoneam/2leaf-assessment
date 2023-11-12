@@ -18,7 +18,10 @@ const userSchema = new Schema({
     minLength: 4,
     required: true
   },
-
+  isEmailConfirmed: {
+    type: Boolean,
+    default: false
+},
 }, {
   timestamps: true,
   toJSON: {

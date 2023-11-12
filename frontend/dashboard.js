@@ -1,7 +1,6 @@
 
 $(document).ready(function() {
     const userToken = localStorage.getItem('userToken');
-    console.log(userToken);
     if (userToken) {
         $.ajax({
             url: 'https://assessment2leaf-42f9c9ea473a.herokuapp.com/api/users/check-token', 
@@ -19,9 +18,8 @@ $(document).ready(function() {
                 }
             },
             error: function() {
-                console('Token is invalid');
-                // localStorage.removeItem('userToken');
-                // window.location.href = 'index.html';
+                localStorage.removeItem('userToken');
+                window.location.href = 'index.html';
             }
         });
     } else {

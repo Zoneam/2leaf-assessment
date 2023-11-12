@@ -81,7 +81,7 @@ function createJWT(user) {
 // Send confirmation email
 function sendConfirmationEmail(userEmail, userId) {
   const isDevelopment = process.env.NODE_ENV === 'development';
-  const HOST = isDevelopment ? `http://127.0.0.1:5501/` : `https://${process.env.FRONTEND_URL}`;
+  const HOST = isDevelopment ? `http://127.0.0.1:5501/frontend/` : `https://${process.env.FRONTEND_URL}`;
 
   console.log(
     "Sending confirmation email to " + userEmail,

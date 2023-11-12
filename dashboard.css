@@ -57,23 +57,23 @@ body {
   left: 72px;
 }
 
-#parental-portal{
-    position: absolute;
-    color: #F5F5F5;
-    bottom:106px;
-    left:170px;
-    font-family: Alfa Slab One;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+#parental-portal {
+  position: absolute;
+  color: #f5f5f5;
+  bottom: 106px;
+  left: 170px;
+  font-family: Alfa Slab One;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 #parental-portal h3 {
-    font-size: 32px;
-    font-weight: 400;
-    line-height: normal;
-    color:#f90;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: normal;
+  color: #f90;
 }
 /* in-partnership */
 #in-partnership {
@@ -300,24 +300,23 @@ body {
   }
   .logo-container > img {
     width: 100px;
-
   }
 
-  .logo-container{
+  .logo-container {
     top: 20px;
     left: 26px;
   }
 
-  #partnership-logos img{
+  #partnership-logos img {
     width: 130px;
-    height:auto;
+    height: auto;
   }
 
-  #parental-portal{
+  #parental-portal {
     position: absolute;
-    color: #F5F5F5;
-    bottom:15px;
-    left:48px;
+    color: #f5f5f5;
+    bottom: 15px;
+    left: 48px;
     font-size: 27px;
   }
 
@@ -336,16 +335,16 @@ body {
     height: auto;
   }
 
-  #schedule-wrapper{
+  #schedule-wrapper {
     flex-direction: column;
   }
 
   .img-title {
     display: none;
     flex-wrap: nowrap;
-    width:100%;
+    width: 100%;
     justify-content: center;
-    height:60px;
+    height: 60px;
   }
 
   .img-title h1 {
@@ -361,69 +360,70 @@ body {
     align-items: center;
   }
 
-#spring-schedule-image {
-display:none
-}
-
-#location{
-  flex-direction: column;
-  height:auto;
-  height: 845px;
-  align-items: center;
-  padding-bottom:0;
-}
-
-#seasons-locations-header {
-  margin-bottom: 0;
-}
-
-#practice{
-  height: 80px;
-}
-
-#seasons-locations-header h1 {
-  font-size: 32px;
-  line-height: 43.81px;
-  width: 350px;
-}
-
-.schedule-location{
-  height: auto;
-  padding-top: 0;
-}
-
-#location-left, #location-right{
-  margin-left: 32px;
-  width: 581px;
-}
-#schedules{
-  height: 550px;
-}
-
-#cost-title{
-  font-size: 32px;
-}
-
-#practice{
-  width:100%;
-}
-
-#cost-paragraph-wrapper{
-  width:100%;
-}
-
-#location img{
-  display:none;
-}
-
-#cost-title{
-   margin-top:10px;
+  #spring-schedule-image {
+    display: none;
   }
 
-.img-title{
-  margin:0;
-  position: relative;
-}
+  #location {
+    flex-direction: column;
+    height: auto;
+    height: 845px;
+    align-items: center;
+    padding-bottom: 0;
+  }
+
+  #seasons-locations-header {
+    margin-bottom: 0;
+  }
+
+  #practice {
+    height: 80px;
+  }
+
+  #seasons-locations-header h1 {
+    font-size: 32px;
+    line-height: 43.81px;
+    width: 350px;
+  }
+
+  .schedule-location {
+    height: auto;
+    padding-top: 0;
+  }
+
+  #location-left,
+  #location-right {
+    margin-left: 32px;
+    width: 581px;
+  }
+  #schedules {
+    height: 550px;
+  }
+
+  #cost-title {
+    font-size: 32px;
+  }
+
+  #practice {
+    width: 100%;
+  }
+
+  #cost-paragraph-wrapper {
+    width: 100%;
+  }
+
+  #location img {
+    display: none;
+  }
+
+  #cost-title {
+    margin-top: 10px;
+  }
+
+  .img-title {
+    margin: 0;
+    position: relative;
+  }
 
   #sponsors-footer {
     text-align: center;
@@ -442,92 +442,185 @@ display:none
   .slides {
     height: auto;
   }
-
-  .logo-container {
-    width: 100px;
-  }
-
-  .logo-container img,
-  #partnership-logos img,
-  #sponsor-logos-wrapper img {
-    height: auto;
-    width: 80px;
-  }
-
-  .content-wrapper h1 {
-    margin-left: 20px;
-    font-size: 24px;
-    line-height: normal;
+  .logo-container > img {
+    width: 60px;
   }
 
   .logo-container {
-    top: 19px;
-    left: 17px;
+    top: 20px;
+    left: 26px;
   }
 
-  .content-wrapper {
-    margin: 20px;
-    height: auto;
-  }
-
-  #sponsors-footer {
-    text-align: center;
-    height: 265px;
-  }
-
-  #sponsor-logos-wrapper {
-    width: 100%;
-    height: auto;
-    margin: 20px 0;
-    padding: 0 20px;
-  }
-}
-
-@media only screen and (max-width: 390px) {
-  .slider,
-  .slides {
-    height: auto;
-  }
-
-  .logo-container {
-    width: 100px;
-  }
-
-  .content-wrapper h1 {
-    margin-left: 20px;
-    font-size: 24px;
-    line-height: normal;
-  }
-
-  .logo-container {
-    top: 19px;
-    left: 17px;
-  }
-
-  .content-wrapper {
-    margin: 20px;
+  #partnership-logos img {
+    width: 72px;
     height: auto;
   }
 
   #in-partnership {
-    height: 100px;
+    height: 110px;
   }
 
   #partnership-logos {
-    width: 70%;
+    width: 250px;
+  }
+
+  #parental-portal {
+    position: absolute;
+    color: #f5f5f5;
+    bottom: 15px;
+    left: 48px;
+    font-size: 18px;
+  }
+
+  #parental-portal h3 {
+    font-size: 12px;
+  }
+
+  .content-wrapper h1 {
+    margin-left: 20px;
+    font-size: 32px;
+    line-height: 43.81px;
+  }
+
+  .content-wrapper {
+    margin: 20px;
     height: auto;
+  }
+
+  #schedule-wrapper {
+    flex-direction: column;
+  }
+
+  #location p {
+    font-size: 12px;
+  }
+
+  .img-title {
+    display: none;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+    height: 60px;
+  }
+
+  .img-title h1 {
+    font-size: 40px;
+    line-height: 43.81px;
+    width: 350px;
+  }
+
+  #schedule-wrapper > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .schedule-card {
+    width: 350px;
+  }
+
+  .schedule-text {
+    font-size: 12px;
+  }
+
+  #spring-schedule-image {
+    display: none;
+  }
+
+  #location {
+    flex-direction: column;
+    height: auto;
+    height: 700px;
+    align-items: center;
+    padding-bottom: 0;
+  }
+
+  #seasons-locations-header {
+    margin-bottom: 0;
+  }
+
+  #practice {
+    height: 80px;
+  }
+
+  #seasons-locations-header h1 {
+    font-size: 32px;
+    line-height: 43.81px;
+    width: 350px;
+  }
+
+  #seasons-locations-paragraph p {
+    font-size: 12px;
+    width: 350px;
+  }
+
+  .schedule-location {
+    height: auto;
+    padding-top: 0;
+  }
+
+  #location-left,
+  #location-right {
+    margin: 0 10px;
+    width: 350px;
+  }
+  #schedules {
+    height: 550px;
+    margin: 0 10px;
+  }
+
+  #cost-title {
+    margin-top: 10px;
+    font-size: 32px;
+  }
+
+  #practice {
+    width: 100%;
+  }
+
+  #cost-paragraph-wrapper {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  #location img {
+    display: none;
+  }
+  #seasons-locations-paragraph {
+    width: 350px;
+  }
+
+  #seasons-locations-header{
+    width: 350px;
+  }
+
+  .colored-span {
+    font-size: 12px;
+  }
+
+  .img-title {
     margin: 0;
+    position: relative;
   }
 
   #sponsors-footer {
     text-align: center;
-    height: 265px;
+    height: 210px;
   }
 
   #sponsor-logos-wrapper {
-    width: 100%;
+    width: 70%;
     height: auto;
     margin: 20px 0;
-    padding: 0 20px;
+  }
+
+  #sponsor-logos-wrapper img {
+    width: 70px;
+    height: auto;
+  }
+
+  #thank-you-wrapper h2 {
+    font-size: 20px;
   }
 }

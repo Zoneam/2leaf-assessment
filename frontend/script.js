@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  let currentIndex = 0;
 
   // Checking for token to display modal
   function checkUserToken(successCallback) {
@@ -28,28 +27,30 @@ $(document).ready(function () {
   });
 
 // Slider
-  function slideTo(index) {
-      $(".slides").css("transform", `translateX(${-index * 50}%)`);
-      currentIndex = index;
-  }
-
-  function nextSlide() {
-      const totalSlides = $(".slides img").length;
-      slideTo((currentIndex + 1) % totalSlides);
-  }
-
-  setInterval(nextSlide, 5000);
-
-  // Click X to close modal
-  $(".close").on("click", function() {
-      $("#login-modal").hide();
-  });
+    const slideContainer = $(".slides");
+    const slides = slideContainer.children("img");
+    
+    function slideToNext() {
+        const slideWidth = slides.width();
+        slideContainer.animate({
+            left: `-=${slideWidth}`
+        }, 300, function() {
+            slideContainer.append(slideContainer.children("img:first"));
+            slideContainer.css('left', '');
+        });
+    }
+    setInterval(slideToNext, 5000);
 
   // Click outside modal to close
   $(window).on("click", function(event) {
       if (!$(event.target).closest('.modal-content').length && !$(event.target).is("#portal-btn")) {
           $("#login-modal").hide();
       }
+  });
+
+  // click X to close modal
+  $(".close").on("click", function() {
+    $("#login-modal").hide();
   });
 
   // Click login parent portal to open modal or redirect

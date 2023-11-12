@@ -1,44 +1,37 @@
-# README #
+# 2Leaf Coding Assessment
 
-Hello! If you're reading this, it means that you have moved on your coding assessment with 2Leaf.
+## Description
+Landing Page for 2Leaf Coding Assessment with user login email confirmation and database functionality.
 
-## How do I get set up? ##
+### Installing and Running the App
+To run app locally on your machine follow the steps below:
+##### 1. Clone the repo: `git clone https://github.com/Zoneam/2leaf-assessment.git`
+##### 2. Navigate to the app's directory: `cd 2leaf-assessment`
+##### -- To run Backend --
+    cd backend
+    npm install
+    nodemon server.js
+##### 4. --To run Frontend --
+    cd frontend
+    Right click index.html and open in browser or use live server extension in VS Code.
 
-* Clone/Download this repository to your local environment
-* Follow the instructions and guidelines to the best of your abilities
-* Do as much as you can within your time limit
+## Configuration
+add .env file to backend folder with the following variables:
+```DATABASE_URL=``` Your MongoDB Atlas URL
+```SECRET=``` Your secret key
+```NODE_ENV=``` development or production
+```EMAIL_USER=``` Your email address on Titan Mail
+```EMAIL_PASS=``` Your email password
+```FRONTEND_URL=``` Your frontend url (http://127.0.0.1:5501/frontend/) is default if you are running app locally
 
-## Assessment ##
+## Usage
+1. Run the app locally on your machine and navigate to the landing page.
+2. Modal will ask to login if you have credentials, if you don't have credentials close modal by clicking X on top left corner or click away from modal.
+3. Navigate to the bottom of the page where you can register new user.
+4. After registration you will receive confirmation email.
+5. Open your email and click on the link to confirm your email.
+6. After successful confirmation you will be redirected to the Parental Portal page where you can see your username and interact with page.
+7. Be aware that your login token will expire in 5 minutes and you will be logged out. This is to simulate a real world scenario where you would be logged out after a certain amount of time.
 
-For this assessment, you will be asked to code a simple HTML landing page based on one of our designs.
-You will be provided with the following:
-
-* This repository, which includes a blank html, css, and javascript file where you will write your code. 
-* A design file using Figma, an online web development software we use for designs
-* [Figma File](https://www.figma.com/file/Cmc66amQ0hfRPGpjzO694H/Test-11%2F10?type=design&node-id=0-1&mode=design&t=frKr6wowuHisAarF-0)
-* An assets folder containing all of the images that are used in the design file, for your convenience.
-* Also included in the assets folder is a minified copy of jQuery, which will be the only additional library you should use for this website.
-* You should have all of the required assets you need for this project other than the font files, which have been purposely excluded but can be found [here](https://fonts.google.com/specimen/Open+Sans) and [here](https://fonts.google.com/specimen/Alfa+Slab+One)
-
-### Instructions ###
-
-You have until your deadline to complete however much of the following you can:
-
-1. Git test: Use commits to show your work.
-2. HTML/CSS Test: Code only the landing page (the one with the two children playing basketball in the header). If you have extra time, you can code the secondary Parent Portal page as well.
-3. Javascript/jQuery Test: 1) Make it so that the header slides right every 5 seconds to reveal the alternate header (the picture of the children on the beach). 2) Create a modal popup that stickies to the center of the screen, prompting users to log in. The modal should be toggleable by clicking outside of the modal, or in the X in the top left corner.
-4. Mobile responsive test: The page should be mobile responsive and look appropriate on desktop, phone, and tablets.
-5. Back-end Test: Allow only approved users with the password access to the Parent Portal page (as a reminder, this page does not need to be coded unless you have extra time). Use Node.js, PHP, or another backend language of your choice. Include instructions on how to run your code.
-6. Database Test: Add back-end functionality for the "Stay updated" mailing list. Emails should be saved into some kind of database (Mongo DB, MySQL, text file, or other). Bonus points for sending a confirmation email.
-7. Done? ZIP your code (including .git folder and any .env) and upload to the provided Dropbox link. Bonus point if you also deploy to a live website.
-
-## Guidelines ##
-
-* Complete the assessment on time.
-* Use good coding practices.
-* Showcase your skills: We are purposefully leaving the requirements basic to allow you freedom to showcase your abilities and make it as complex as you would like.
-* Please refrain from using styling libraries like Bootstrap or Tailwind, although if you feel them necessary to include, we'd rather see that than nothing.
-
-#### Questions? ####
-
-If you have any questions about what is being asked of you for this project, please contact us before the due date.
+## Contact
+If you have any questions feel free to contact me at my email: contact@haykmn.com

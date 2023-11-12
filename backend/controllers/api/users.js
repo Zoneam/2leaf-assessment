@@ -26,6 +26,7 @@ const transporter = nodemailer.createTransport({
 // login User
 async function login(req, res) {
   try {
+    console.log("REQ BODY",req.body);
     const user = await User.findOne({ email: req.body.email });
     if (!user) throw new Error();
     const match = await bcrypt.compare(req.body.password, user.password);
@@ -81,7 +82,7 @@ function createJWT(user) {
 // Send confirmation email
 function sendConfirmationEmail(userEmail, userId) {
   const isDevelopment = process.env.NODE_ENV === 'development';
-  const HOST = isDevelopment ? `http://127.0.0.1:5501/frontend/` : `https://${process.env.FRONTEND_URL}`;
+  const HOST = isDevelopment ? `http://127.0.0.1:5501/frontend/` : `${process.env.FRONTEND_URL}`;
 
   console.log(
     "Sending confirmation email to " + userEmail,

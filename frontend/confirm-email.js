@@ -2,7 +2,7 @@ $(document).ready(function() {
     const token = new URLSearchParams(window.location.search).get('token');
 
     $.ajax({
-        url: `http://localhost:3001/api/users/confirm-email?token=${token}`,
+        url: `https://melodic-fairy-d0d535.netlify.app/api/users/confirm-email?token=${token}`,
         method: 'POST',
         success: function(res) {
             $('#message').text('Email confirmed successfully!');

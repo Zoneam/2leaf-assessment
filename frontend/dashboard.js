@@ -4,7 +4,7 @@ $(document).ready(function() {
     console.log(userToken);
     if (userToken) {
         $.ajax({
-            url: 'http://localhost:3001/api/users/check-token', 
+            url: 'https://melodic-fairy-d0d535.netlify.app/api/users/check-token', 
             type: 'POST',
             headers: { 'Authorization': 'Bearer ' + userToken },
             success: function(response) {

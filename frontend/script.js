@@ -6,7 +6,7 @@ $(document).ready(function () {
       const userToken = localStorage.getItem('userToken');
       if (userToken) {
           $.ajax({
-              url: 'http://localhost:3001/api/users/check-token',
+              url: 'https://melodic-fairy-d0d535.netlify.app/api/users/check-token',
               type: 'POST',
               headers: { 'Authorization': 'Bearer ' + userToken },
               success: function(res) {
@@ -107,7 +107,7 @@ $(document).ready(function () {
     console.log("Name: " + name + ", Email: " + email + ", Password: " + password);
 
       $.ajax({
-          url: 'http://localhost:3001/api/users',
+          url: 'https://melodic-fairy-d0d535.netlify.app/api/users',
           type: 'POST',
           contentType: 'application/json',
           data: JSON.stringify({ name: name, email: email, password: password }),
@@ -131,7 +131,7 @@ $(document).ready(function () {
       console.log("email: " + email + ", Password: " + password);
 
       $.ajax({
-          url: 'http://localhost:3001/api/users/login',
+          url: 'https://melodic-fairy-d0d535.netlify.app/api/users/login',
           type: 'POST',
           contentType: 'application/json',
           data: JSON.stringify({ email: email, password: password }),

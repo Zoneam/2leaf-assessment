@@ -3,7 +3,7 @@
 ## Description
 Landing Page for 2Leaf Coding Assessment with user login email confirmation and database functionality.
 
-##[Live Demo](https://2leafassessment.netlify.app/)
+## [Live Demo](https://2leafassessment.netlify.app/)
 
 ### Installing and Running the App
 To run app locally on your machine follow the steps below:

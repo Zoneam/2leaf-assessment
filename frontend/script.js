@@ -10,7 +10,6 @@ $(document).ready(function () {
               type: 'POST',
               headers: { 'Authorization': 'Bearer ' + userToken },
               success: function(res) {
-                  console.log('Token is valid');
                   successCallback();
               },
               error: function() {
@@ -110,7 +109,6 @@ $(document).ready(function () {
           contentType: 'application/json',
           data: JSON.stringify({ name: name, email: email, password: password }),
           success: function(token) {
-              console.log('Signup successful:', token);
               localStorage.setItem('userToken', token);
               window.location.href = 'dashboard.html';
           },

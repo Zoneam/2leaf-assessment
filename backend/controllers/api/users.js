@@ -26,12 +26,10 @@ const transporter = nodemailer.createTransport({
 // login User
 async function login(req, res) {
   try {
-    console.log("REQ BODY",req.body);
     const user = await User.findOne({ email: req.body.email });
     if (!user) throw new Error();
     const match = await bcrypt.compare(req.body.password, user.password);
     if (!match) throw new Error();
-    console.log(user);
     res.json(createJWT(user));
   } catch {
     res.status(400).json("Bad Credentials");
@@ -102,7 +100,6 @@ function sendConfirmationEmail(userEmail, userId) {
 
 // Confirm email, setting isEmailConfirmed to true in DB
 async function confirmEmail(req, res) {
-  console.log(" in  confirmEmail");
   try {
     const userId = req.query.token;
     const user = await User.findById(userId);

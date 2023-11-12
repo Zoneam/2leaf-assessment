@@ -71,6 +71,9 @@ body {
 
 #parental-portal h3 {
     font-size: 32px;
+    font-weight: 400;
+    line-height: normal;
+    color:#f90;
 }
 /* in-partnership */
 #in-partnership {
@@ -112,7 +115,8 @@ body {
 .schedule-location {
   background-color: #151515;
   height: 764px;
-  padding: 104px 0 0 138px;
+  justify-content: center;
+  padding-top: 104px;
   display: flex;
   flex-direction: row;
 }
@@ -294,6 +298,33 @@ body {
   .slides {
     height: auto;
   }
+  .logo-container > img {
+    width: 100px;
+
+  }
+
+  .logo-container{
+    top: 20px;
+    left: 26px;
+  }
+
+  #partnership-logos img{
+    width: 130px;
+    height:auto;
+  }
+
+  #parental-portal{
+    position: absolute;
+    color: #F5F5F5;
+    bottom:15px;
+    left:48px;
+    font-size: 27px;
+  }
+
+  #parental-portal h3 {
+    font-size: 18px;
+  }
+
   .content-wrapper h1 {
     margin-left: 20px;
     font-size: 32px;
@@ -304,6 +335,95 @@ body {
     margin: 20px;
     height: auto;
   }
+
+  #schedule-wrapper{
+    flex-direction: column;
+  }
+
+  .img-title {
+    display: none;
+    flex-wrap: nowrap;
+    width:100%;
+    justify-content: center;
+    height:60px;
+  }
+
+  .img-title h1 {
+    font-size: 40px;
+    line-height: 43.81px;
+    width: 350px;
+  }
+
+  #schedule-wrapper > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+#spring-schedule-image {
+display:none
+}
+
+#location{
+  flex-direction: column;
+  height:auto;
+  height: 845px;
+  align-items: center;
+  padding-bottom:0;
+}
+
+#seasons-locations-header {
+  margin-bottom: 0;
+}
+
+#practice{
+  height: 80px;
+}
+
+#seasons-locations-header h1 {
+  font-size: 32px;
+  line-height: 43.81px;
+  width: 350px;
+}
+
+.schedule-location{
+  height: auto;
+  padding-top: 0;
+}
+
+#location-left, #location-right{
+  margin-left: 32px;
+  width: 581px;
+}
+#schedules{
+  height: 550px;
+}
+
+#cost-title{
+  font-size: 32px;
+}
+
+#practice{
+  width:100%;
+}
+
+#cost-paragraph-wrapper{
+  width:100%;
+}
+
+#location img{
+  display:none;
+}
+
+#cost-title{
+   margin-top:10px;
+  }
+
+.img-title{
+  margin:0;
+  position: relative;
+}
 
   #sponsors-footer {
     text-align: center;
@@ -317,7 +437,6 @@ body {
   }
 }
 
-/* media queris for mobile phones */
 @media only screen and (max-width: 600px) {
   .slider,
   .slides {

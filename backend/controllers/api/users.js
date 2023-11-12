@@ -53,6 +53,7 @@ async function create(req, res) {
   }
 }
 
+// Check Token
 function checkToken(req, res) {
   const authHeader = req.headers.authorization;
 
@@ -72,9 +73,11 @@ function checkToken(req, res) {
 }
 
 function createJWT(user) {
+  // Expiring in 5 minutes for demonstration purposes only
   return jwt.sign({ user }, process.env.SECRET, { expiresIn: "5m" });
 }
 
+// Send confirmation email
 function sendConfirmationEmail(userEmail, userId) {
   console.log(
     "Sending confirmation email to " + userEmail,
@@ -99,6 +102,7 @@ function sendConfirmationEmail(userEmail, userId) {
   });
 }
 
+// Confirm email, setting isEmailConfirmed to true in DB
 async function confirmEmail(req, res) {
   console.log(" in  confirmEmail");
   try {

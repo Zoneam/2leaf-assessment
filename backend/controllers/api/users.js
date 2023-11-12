@@ -54,14 +54,15 @@ async function create(req, res) {
 }
 
 // Check Token
-function checkToken(req, res) {
+async function checkToken(req, res) {
   const authHeader = req.headers.authorization;
 
   if (authHeader) {
     const token = authHeader.split(" ")[1];
-    console.log(req.user, token);
+    
     if (token) {
-      res.json({ name: req.user.name, token: token });
+      const user = await User.findOne({ email: req.user.email });
+      res.json({ name: req.user.name, token: token, isConfirmed: user.isEmailConfirmed ?? false });
     } else {
       res
         .status(401)
@@ -79,6 +80,9 @@ function createJWT(user) {
 
 // Send confirmation email
 function sendConfirmationEmail(userEmail, userId) {
+  const isDevelopment = process.env.NODE_ENV === 'development';
+  const HOST = isDevelopment ? `http://127.0.0.1:5501/` : `https://${process.env.FRONTEND_URL}`;
+
   console.log(
     "Sending confirmation email to " + userEmail,
     process.env.EMAIL_USER,
@@ -90,7 +94,7 @@ function sendConfirmationEmail(userEmail, userId) {
     subject: "Confirm your Email",
     text:
       "Please confirm your email by clicking the following link: " +
-      `http://127.0.0.1:5501/confirm-email.html?token=${userId}`,
+      `${HOST}confirm-email.html?token=${userId}`,
   };
 
   transporter.sendMail(mailOptions, function (error, info) {

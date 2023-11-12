@@ -6,7 +6,7 @@ $(document).ready(function() {
         method: 'POST',
         success: function(res) {
             $('#message').text('Email confirmed successfully!');
-            setTimeout(() => window.location.href = 'index.html', 3000);
+            setTimeout(() => window.location.href = 'dashboard.html', 3000);
         },
         error: function() {
             $('#message').text('Error confirming email. Please try again.');

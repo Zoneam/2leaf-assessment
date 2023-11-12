@@ -18,8 +18,9 @@ $(document).ready(function() {
                 }
             },
             error: function() {
-                localStorage.removeItem('userToken');
-                window.location.href = 'index.html';
+                console.log('Token is invalid');
+                // localStorage.removeItem('userToken');
+                // window.location.href = 'index.html';
             }
         });
     } else {

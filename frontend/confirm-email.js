@@ -2,7 +2,7 @@ $(document).ready(function() {
     const token = new URLSearchParams(window.location.search).get('token');
 
     $.ajax({
-        url: `https://assessment2leaf-42f9c9ea473a.herokuapp.com/api/users/confirm-email?token=${token}`,
+        url: `${BASE_URL}api/users/confirm-email?token=${token}`,
         method: 'POST',
         success: function(res) {
             $('#message').text('Email confirmed successfully!');

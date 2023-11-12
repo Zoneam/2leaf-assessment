@@ -3,7 +3,7 @@ $(document).ready(function() {
     const userToken = localStorage.getItem('userToken');
     if (userToken) {
         $.ajax({
-            url: 'https://assessment2leaf-42f9c9ea473a.herokuapp.com/api/users/check-token', 
+            url: `${BASE_URL}api/users/check-token`, 
             type: 'POST',
             headers: { 'Authorization': 'Bearer ' + userToken },
             success: function(response) {

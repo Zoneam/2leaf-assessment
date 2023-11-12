@@ -1,13 +1,12 @@
 $(document).ready(function () {
   let currentIndex = 0;
 
-
   // Checking for token to display modal
   function checkUserToken(successCallback) {
       const userToken = localStorage.getItem('userToken');
       if (userToken) {
           $.ajax({
-              url: 'https://assessment2leaf-42f9c9ea473a.herokuapp.com/api/users/check-token',
+              url: `${BASE_URL}api/users/check-token`,
               type: 'POST',
               headers: { 'Authorization': 'Bearer ' + userToken },
               success: function(res) {
@@ -106,7 +105,7 @@ $(document).ready(function () {
     }
 
       $.ajax({
-          url: 'https://assessment2leaf-42f9c9ea473a.herokuapp.com/api/users',
+          url: `${BASE_URL}api/users`,
           type: 'POST',
           contentType: 'application/json',
           data: JSON.stringify({ name: name, email: email, password: password }),
@@ -129,7 +128,7 @@ $(document).ready(function () {
       const password = $("#login-password").val();
 
       $.ajax({
-          url: 'https://assessment2leaf-42f9c9ea473a.herokuapp.com/api/users/login',
+          url: `${BASE_URL}api/users/login`,
           type: 'POST',
           contentType: 'application/json',
           data: JSON.stringify({ email: email, password: password }),

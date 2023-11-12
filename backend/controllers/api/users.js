@@ -41,7 +41,6 @@ async function login(req, res) {
 // Create User
 async function create(req, res) {
   try {
-    console.log(req.body);
     const user = await User.create(req.body);
     const token = createJWT(user);
 
@@ -83,12 +82,6 @@ function createJWT(user) {
 function sendConfirmationEmail(userEmail, userId) {
   const isDevelopment = process.env.NODE_ENV === 'development';
   const HOST = isDevelopment ? `http://127.0.0.1:5501/frontend/` : `${process.env.FRONTEND_URL}`;
-
-  console.log(
-    "Sending confirmation email to " + userEmail,
-    process.env.EMAIL_USER,
-    process.env.EMAIL_PASS
-  );
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: userEmail,
@@ -113,7 +106,6 @@ async function confirmEmail(req, res) {
   try {
     const userId = req.query.token;
     const user = await User.findById(userId);
-    console.log("USER---->", user);
     if (!user) return res.status(400).send("Invalid token");
 
     user.isEmailConfirmed = true;

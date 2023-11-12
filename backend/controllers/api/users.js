@@ -26,6 +26,7 @@ const transporter = nodemailer.createTransport({
 // login User
 async function login(req, res) {
   try {
+    console.log("REQ BODY",req.body);
     const user = await User.findOne({ email: req.body.email });
     if (!user) throw new Error();
     const match = await bcrypt.compare(req.body.password, user.password);

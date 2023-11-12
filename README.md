@@ -3,6 +3,8 @@
 ## Description
 Landing Page for 2Leaf Coding Assessment with user login email confirmation and database functionality.
 
+##[Live Demo](https://2leafassessment.netlify.app/)
+
 ### Installing and Running the App
 To run app locally on your machine follow the steps below:
 ##### 1. Clone the repo: `git clone https://github.com/Zoneam/2leaf-assessment.git`
@@ -32,6 +34,20 @@ add .env file to backend folder with the following variables:
 5. Open your email and click on the link to confirm your email.
 6. After successful confirmation you will be redirected to the Parental Portal page where you can see your username and interact with page.
 7. Be aware that your login token will expire in 5 minutes and you will be logged out. This is to simulate a real world scenario where you would be logged out after a certain amount of time.
+
+## Technologies Used
+* HTML
+* CSS
+* JavaScript
+* Jquery
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+* Nodemailer
+* JWT
+* Bcrypt
+* Dotenv
 
 ## Contact
 If you have any questions feel free to contact me at my email: contact@haykmn.com

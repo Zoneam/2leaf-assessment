@@ -9,9 +9,9 @@ const HOST = isDevelopment ? 'localhost' : '0.0.0.0';
 
 const app = express();
 app.use(cors({
-  origin: '*', 
-  methods: ['GET', 'POST', 'OPTIONS'],
-  allowedHeaders: ['Content-Type']
+  origin: 'https://2leafassessment.netlify.app',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], 
+  allowedHeaders: ['Content-Type', 'Authorization'] 
 }));
 app.use(logger('dev'));
 app.use(express.json());

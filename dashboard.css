@@ -57,6 +57,21 @@ body {
   left: 72px;
 }
 
+#parental-portal{
+    position: absolute;
+    color: #F5F5F5;
+    bottom:106px;
+    left:170px;
+    font-family: Alfa Slab One;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#parental-portal h3 {
+    font-size: 32px;
+}
 /* in-partnership */
 #in-partnership {
   display: flex;
@@ -94,12 +109,26 @@ body {
 
 /* Schedule */
 
-#schedule-wrapper {
+.schedule-location {
   background-color: #151515;
-  height: 788px;
+  height: 764px;
   padding: 104px 0 0 138px;
   display: flex;
   flex-direction: row;
+}
+
+.img-title {
+  margin: 32px 0 0 32px;
+  position: absolute;
+  width: 232px;
+  height: 136px;
+  flex-shrink: 0;
+  color: #f90;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 #spring-schedule-image {
@@ -135,6 +164,89 @@ body {
   height: 126px;
   margin-bottom: 32px;
 }
+
+/* Location */
+
+#location {
+  display: flex;
+  flex-direction: row;
+  height: 852px;
+  background-color: #151515;
+  padding-top: 0;
+  padding-bottom: 88px;
+}
+
+#cost-title {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 48px;
+  color: #f90;
+  margin-top: 88px;
+  margin-bottom: 24px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cost-paragraph {
+  color: #f5f5f5;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#cost-paragraph-wrapper {
+  height: 174px;
+  width: 480px;
+}
+
+.colored-span {
+  color: #f90;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#location-right {
+  margin-left: 32px;
+  color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#practice {
+  width: 625px;
+  height: 125px;
+  flex-shrink: 0;
+}
+
+#seasons-locations-header {
+  width: 443px;
+  height: 120px;
+  flex-shrink: 0;
+  color: #f90;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 24px;
+}
+
+#seasons-locations-paragraph {
+  width: 561px;
+  height: 226px;
+  flex-shrink: 0;
+}
+
 /* Sponsors  */
 
 #sponsors-footer {

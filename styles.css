@@ -364,6 +364,9 @@ footer h1 {
 }
 
 /* Modal */
+#login-modal {
+  display: none;
+}
 .modal {
   display: none;
   position: absolute;

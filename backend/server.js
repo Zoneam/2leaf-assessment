@@ -1,7 +1,6 @@
 const express = require('express');
 const cors = require('cors');
 const logger = require('morgan');
-console.log('Hello World-Backend');
 require('dotenv').config();
 require('./config/database');
 const isDevelopment = process.env.NODE_ENV === 'development';

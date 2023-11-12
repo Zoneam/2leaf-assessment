@@ -433,6 +433,7 @@ footer h1 {
 .modal-form input[type="password"] {
   width: 432px;
   height: 48px;
+  text-indent: 10px;
   border: 2px solid #7c7c7c;
 }
 

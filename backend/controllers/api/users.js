@@ -54,14 +54,15 @@ async function create(req, res) {
 }
 
 // Check Token
-function checkToken(req, res) {
+async function checkToken(req, res) {
   const authHeader = req.headers.authorization;
 
   if (authHeader) {
     const token = authHeader.split(" ")[1];
-    console.log(req.user, token);
+    
     if (token) {
-      res.json({ name: req.user.name, token: token });
+      const user = await User.findOne({ email: req.user.email });
+      res.json({ name: req.user.name, token: token, isConfirmed: user.isEmailConfirmed });
     } else {
       res
         .status(401)

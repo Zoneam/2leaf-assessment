@@ -1,14 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="dashboard.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dashboard.css" />
     <script defer src="assets/jquery-3.6.0.min.js"></script>
     <script defer src="dashboard.js"></script>
-</head>
-<body id="dashboard-content">
-    <h1>Welcome to Your Dashboard</h1>
-</body>
+    <title>2Leaf</title>
+  </head>
+  <body id="dashboard">
+    <header class="slider">
+      <div class="logo-container">
+        <img src="assets/Group_logo.svg" alt="" />
+      </div>
+      <div id="parental-portal">
+        <h1>Parental Portal</h1>
+        <h3 id="welcome-name"></h3>
+      </div>
+      <div class="slides">
+        <img src="assets/banner_image_2.png" alt="Kids Playing Basketball" />
+        <img
+          src="assets/banner_image_2.png"
+          alt="Silhouettes of joyful people with raised arms on the beach at sunset"
+        />
+      </div>
+    </header>
+
+    <div id="in-partnership">
+      <span>In partnership with</span>
+      <div id="partnership-logos">
+        <img src="assets/Group_logo.svg" alt="" />
+        <img src="assets/star_logo.svg" alt="" />
+      </div>
+    </div>
+
+    <div id="schedule-wrapper" class="schedule-location">
+      <div>
+        <div class="img-title">
+          <h1>Spring Schedule</h1>
+        </div>
+        <img
+          id="spring-schedule-image"
+          src="assets/spring_schedule_image.png"
+          alt=""
+        />
+      </div>
+      <div id="schedules">
+        <div class="schedule-card">
+          <h2 class="shedule-title">Practices</h2>
+          <p class="schedule-text">
+            Tuesdays and Thursdays @ 5pm. FIRST PRACTICE THIS THURSDAY AT 5PM.
+            Possibility of Mondays at 4:30pm as an alternate day if that is
+            better for families' schedules. Please let me know of any
+            preferences.
+          </p>
+        </div>
+        <div class="schedule-card">
+          <h2 class="shedule-title">Games</h2>
+          <p class="schedule-text">
+            Smith is working with SF house to arrange games. It may be sporadic
+            in the beginning as they are looking for a coach, but we should be
+            able to have scrimmages and games with the other teams that have
+            coaches. We will eventually look to have games weekly, preferably
+            Saturdays.
+          </p>
+        </div>
+        <div class="schedule-card">
+          <h2 class="shedule-title">Tournaments</h2>
+          <p class="schedule-text">
+            We are looking to play in 1-2 tournaments before the summer. We will
+            gauge readiness and family schedules, but looking at the end of
+            April (Spring Championship) and mid-May (Spring Finale). These dates
+            are definitely not set, not-mandatory, but we view them as a great
+            way to expose our kids to different levels of the sport from
+            different cities/regions.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="location" class="schedule-location">
+      <div id="location-left">
+        <div class="img-title">
+          <h1>Location</h1>
+        </div>
+        <img src="assets/location_image.png" alt="" />
+        <h1 id="cost-title">Cost</h1>
+        <div id="cost-paragraph-wrapper">
+          <p class="cost-paragraph">
+            We are asking families for
+            <span class="colored-span">$200/mo through May</span>, and possibly
+            for the first part of June, solely to cover coach expenses, uniforms
+            and gear (we plan to have some cool jerseys, warmups, and gear), and
+            program costs.
+          </p>
+          <br />
+          <p class="cost-paragraph">
+            <span class="colored-span">
+              Costs for Tournaments are extra but are typically around $350 per
+              team for registration.</span
+            >
+            If there is any shortfall, I've committed to covering those costs.
+          </p>
+        </div>
+      </div>
+      <div id="location-right">
+        <div id="practice">
+          <p>
+            Practices will be held at the Sacramento High School on the Upper
+            Courts. There are 3 levels of basketball courts - the Upper Courts
+            are off Kittens Rd.
+          </p>
+        </div>
+        <div id="seasons-locations-text">
+          <div id="seasons-locations-header">
+            <h1>Seasons <br />& Locations</h1>
+          </div>
+          <div id="seasons-locations-paragraph">
+            <p>
+              This team is a 4-Season Club Team and Skills Academy. The Club
+              Team plays in the Fall, Spring, and Summer (dependent on
+              availability) as a traveling team playing other local teams and
+              1-3 local tournaments per season.
+              <br /><br />
+              The Winter Season is played at the Sacramento and Hawaii YMCA
+              basketball leagues. Throughout the year and in the Summer, we also
+              offer Skills Clinics and Basketball Camps.
+              <br /><br />
+              For additional information please contact us below.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sponsors-footer">
+      <div id="thank-you-wrapper">
+        <h2>Thank You to Our Generous Sponsors</h2>
+      </div>
+      <div id="sponsor-logos-wrapper">
+        <img src="assets/2Leaf Logo.svg" alt="" />
+        <img src="assets/Group_logo.svg" alt="" />
+        <img src="assets/star_logo.svg" alt="" />
+      </div>
+    </div>
+  </body>
 </html>

@@ -62,22 +62,62 @@ $(document).ready(function () {
 
   // Handle sign up
   $('#signup-btn').on('click', function(e) {
-      e.preventDefault();
-      const email = $('#signup-email').val();
-      const password = $('#signup-password').val();
-      console.log("email: " + email + ", Password: " + password);
+    e.preventDefault();
+    const name = $('#name').val().trim();
+    const email = $('#signup-email').val();
+    const password = $('#signup-password').val();
+    const confirmPassword = $('#confirm-password').val();
+
+    // Validating name
+    if (!name) {
+        // better to display on screen than alert just fallowing requirements not altering html
+        alert('Please enter your name.');
+        return;
+    }
+
+    // validatin password
+    function isValidPassword(password) {
+        const minLength = 8;
+        const hasNumber = /\d/;
+        const hasLower = /[a-z]/;
+        const hasUpper = /[A-Z]/;
+        
+        return (
+            password.length >= minLength &&
+            hasNumber.test(password) &&
+            hasLower.test(password) &&
+            hasUpper.test(password)
+        );
+    }
+
+    // Check if the password is valid
+    if (!isValidPassword(password)) {
+        // better to display on screen than alert just fallowing requirements not altering html
+        alert('Password must be at least 8 characters long and include at least one number, one lowercase and one uppercase letter.');
+        return;
+    }
+
+    // Check if passwords match
+    if (password !== confirmPassword) {
+        // better to display on screen than alert just fallowing requirements not altering html
+        alert('Passwords do not match.');
+        return;
+    }
+
+    console.log("Name: " + name + ", Email: " + email + ", Password: " + password);
 
       $.ajax({
           url: 'http://localhost:3001/api/users',
           type: 'POST',
           contentType: 'application/json',
-          data: JSON.stringify({ email: email, password: password }),
+          data: JSON.stringify({ name: name, email: email, password: password }),
           success: function(token) {
               console.log('Signup successful:', token);
               localStorage.setItem('userToken', token);
               window.location.href = 'dashboard.html';
           },
           error: function() {
+            // better to display on screen than alert just fallowing requirements not altering html
               alert('Signup failed');
           }
       });
@@ -96,11 +136,11 @@ $(document).ready(function () {
           contentType: 'application/json',
           data: JSON.stringify({ email: email, password: password }),
           success: function(token) {
-              console.log('Login successful:', token);
               localStorage.setItem('userToken', token);
               window.location.href = 'dashboard.html';
           },
           error: function() {
+            // better to display on screen than alert just fallowing requirements not altering html
               alert('Login failed');
           }
       });

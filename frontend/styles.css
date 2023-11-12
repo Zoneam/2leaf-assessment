@@ -1,6 +1,16 @@
+
+
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@400;600&display=swap");
+
+:root {
+  --color-orange: #ff9900;
+  --color-black: #151515;
+  --color-white: #f5f5f5;
+  --color-grey: #7c7c7c;
+  --color-dark-grey: #ddd;
+}
 
 * {
   margin: 0;
@@ -29,11 +39,11 @@ body {
 }
 
 .slides {
-  width: 200%;
+  width: 200%; /* have 2 slides, if more increase */
   height: 608px;
   display: flex;
-  overflow: hidden;
-  transition: transform 300ms ease-out;
+  position: relative;
+  left: 0;
 }
 
 .slides img {
@@ -59,7 +69,7 @@ body {
   font-size: 16px;
   line-height: 21.79px;
   font-weight: 400;
-  background-color: #ff9900;
+  background-color: var(--color-orange);
   color: black;
   font-family: "Open Sans", sans-serif;
   border-radius: 5px;
@@ -91,7 +101,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background-color: #f5f5f5;
+  background-color: var(--color-white);
   height: 200px;
 }
 
@@ -122,7 +132,7 @@ body {
 
 /* program-description */
 .program-description {
-  background-color: #151515;
+  background-color: var(--color-black);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -146,7 +156,7 @@ body {
   min-width: 684px;
   height: 160px;
   font-size: 16px;
-  color: #f5f5f5;
+  color: var(--color-white);
   width: 684px;
   font-family: "Open Sans", sans-serif;
   line-height: 21.79px;
@@ -163,7 +173,7 @@ body {
 
 .content-wrapper h1 {
   font-family: "Alfa Slab One", cursive;
-  color: #ff9900;
+  color: var(--color-orange);
   font-size: 48px;
   text-wrap: nowrap;
   line-height: 65.71px;
@@ -176,7 +186,7 @@ body {
   width: 432px;
   border: 1px;
   height: 2px;
-  background-color: #ff9900;
+  background-color: var(--color-orange);
   margin: 0;
 }
 /* Mission */
@@ -201,7 +211,7 @@ body {
 
 #coaching h1 {
   font-family: "Alfa Slab One", cursive;
-  color: #ff9900;
+  color: var(--color-orange);
   font-size: 48px;
   text-wrap: nowrap;
   line-height: 65.71px;
@@ -222,7 +232,7 @@ body {
 .director-card {
   height: 648px;
   width: 568px;
-  background-color: #f5f5f5;
+  background-color: var(--color-white);
   z-index: 1000;
   padding: 30px 20px;
 }
@@ -232,14 +242,14 @@ body {
   font-weight: 400;
   font-size: 32px;
   line-height: 43.81px;
-  color: #ff9900;
+  color: var(--color-orange);
 }
 
 .director-description {
   font-weight: 600;
   font-size: 16px;
   line-height: 21.79px;
-  color: #151515;
+  color: var(--color-black);
   font-family: "Open Sans", sans-serif;
 }
 
@@ -247,7 +257,7 @@ body {
   font-weight: 600;
   font-size: 24px;
   line-height: 32.68px;
-  color: #151515;
+  color: var(--color-black);
   font-family: "Open Sans", sans-serif;
 }
 
@@ -265,7 +275,7 @@ body {
 
 #sponsors-footer h2 {
   font-family: "Alfa Slab One", cursive;
-  color: #ff9900;
+  color: var(--color-orange);
   font-size: 32px;
   line-height: 43.81px;
   font-weight: 400;
@@ -299,11 +309,11 @@ footer {
   align-items: center;
   justify-content: space-evenly;
   height: 546px;
-  background-color: #151515;
+  background-color: var(--color-black);
 }
 
 footer h1 {
-  color: #ff9900;
+  color: var(--color-orange);
   font-weight: 400;
   font-size: 32px;
   line-height: 43.81px;
@@ -332,7 +342,7 @@ footer h1 {
   text-indent: 10px;
   width: 432px;
   height: 48px;
-  color: #7c7c7c;
+  color: var(--color-grey);
   font-weight: 600;
   font-size: 16px;
   line-height: 21.79px;
@@ -344,18 +354,18 @@ footer h1 {
 }
 
 ::placeholder {
-  color: #ddd;
+  color: var(--color-dark-grey);
   text-indent: 10px;
 }
 
 #signup-btn {
   width: 432px;
   height: 48px;
-  background-color: #ff9900;
+  background-color: var(--color-orange);
   gap: 10px;
   padding: 10px;
   border-radius: 5px;
-  color: #151515;
+  color: var(--color-black);
   font-size: 16px;
   cursor: pointer;
   font-weight: 600;
@@ -387,7 +397,7 @@ footer h1 {
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
-  background-color: #f5f5f5;
+  background-color: var(--color-white);
   width: 848px;
   height: 632px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -397,7 +407,7 @@ footer h1 {
 .close {
   width: 30px;
   height: 30px;
-  color: #7c7c7c;
+  color: var(--color-grey);
   position: relative;
   top: 32px;
   left: 32px;
@@ -421,7 +431,7 @@ footer h1 {
 }
 
 .modal-header h1 {
-  color: #ff9900;
+  color: var(--color-orange);
   font-family: "Alfa Slab One", cursive;
   font-size: 48px;
   font-style: normal;
@@ -447,8 +457,8 @@ footer h1 {
 }
 
 .modal-submit-btn {
-  background-color: #ff9900;
-  color: #151515;
+  background-color: var(--color-orange);
+  color: var(--color-black);
   font-weight: 600;
   font-family: "Open Sans", sans-serif;
   line-height: 21.79px;
@@ -468,7 +478,7 @@ footer h1 {
 .modal-footer {
   margin: 0 auto;
   width: 304px;
-  color: #151515;
+  color: var(--color-black);
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
@@ -478,7 +488,7 @@ footer h1 {
 }
 
 .modal-footer p {
-  color: #151515;
+  color: var(--color-black);
   font-size: 12px;
   font-family: "Open Sans", sans-serif;
   line-height: 16.34px;
@@ -510,6 +520,10 @@ footer h1 {
     margin-right: 50px;
   }
 
+  .logo-container img {
+    width: 130px;
+  }
+
   #mission {
     height: auto;
   }
@@ -517,6 +531,15 @@ footer h1 {
   #programm-mission {
     height: auto;
     margin: 20px 0;
+  }
+
+  #partnership-logos img {
+    width: 130px;
+    height: auto;
+  }
+
+  #in-partnership {
+    height: 150px;
   }
 
   .directors {
@@ -579,6 +602,11 @@ footer h1 {
     height: 265px;
   }
 
+  #sponsor-logos-wrapper img {
+    width: 124px;
+    height: auto;
+  }
+
   #sponsor-logos-wrapper {
     width: 70%;
     height: auto;
@@ -607,10 +635,18 @@ footer h1 {
   }
 
   .logo-container img,
-  #partnership-logos img,
-  #sponsor-logos-wrapper img {
+  #partnership-logos img {
     height: auto;
     width: 80px;
+  }
+
+  #sponsor-logos-wrapper img {
+    width: 124px;
+    height: auto;
+  }
+
+  #partnership-logos {
+    width: 262px;
   }
 
   .content-wrapper h1 {
@@ -648,6 +684,10 @@ footer h1 {
     height: auto;
   }
 
+  #in-partnership {
+    height: 120px;
+  }
+
   #programm-mission {
     height: auto;
     margin: 20px 0;
@@ -672,7 +712,7 @@ footer h1 {
   }
 
   #coaching-wrapper h1 {
-    text-wrap: wrap;;
+    text-wrap: wrap;
     margin-left: 20px;
     font-size: 32px;
     line-height: 43.81px;
@@ -744,11 +784,11 @@ footer h1 {
     width: 300px;
   }
 
-  .modal-submit-btn{
+  .modal-submit-btn {
     width: 300px;
   }
 
-  .close{
+  .close {
     top: 10px;
     left: 10px;
   }
@@ -918,7 +958,7 @@ footer h1 {
   }
 
   .modal-footer {
-    width:200px;
+    width: 200px;
   }
 
   .modal-form input[type="email"],
@@ -926,11 +966,11 @@ footer h1 {
     width: 200px;
   }
 
-  .modal-submit-btn{
+  .modal-submit-btn {
     width: 200px;
   }
 
-  .close{
+  .close {
     top: 10px;
     left: 10px;
   }

@@ -62,7 +62,7 @@ async function checkToken(req, res) {
     
     if (token) {
       const user = await User.findOne({ email: req.user.email });
-      res.json({ name: req.user.name, token: token, isConfirmed: user.isEmailConfirmed });
+      res.json({ name: req.user.name, token: token, isConfirmed: user.isEmailConfirmed ?? false });
     } else {
       res
         .status(401)
